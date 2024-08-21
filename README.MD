@@ -33,7 +33,7 @@ git pull # na branch 'develop'
 
 Atualmente, os seus branches vão estar assim:
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3c8efb15-4e26-4f04-84a4-396355713771/869db022-3fdf-438f-a4e4-e8c249734a0c/image.png)
+![image.png](./images/image1.png)
 
 Caso queira finalizar, basta digitar:
 
@@ -46,7 +46,7 @@ git flow feature finish DBS-XX-criar-readme
 # 3. Você voltará automaticamente para o branch 'develop'
 ```
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/3c8efb15-4e26-4f04-84a4-396355713771/0e0a07e8-fadd-4a7d-ba32-066da623bd94/image.png)
+![image.png](./images/image2.png)
 
 Bastaria pushar o branch develop (mas não é uma boa prática já que, geralmente, o branch develop também pode ser usado em ambientes de homologação).
 
