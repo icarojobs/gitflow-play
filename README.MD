@@ -57,5 +57,18 @@ Bastaria pushar o branch develop (mas não é uma boa prática já que, geralmen
 ```bash
 # Para criação de novos recursos
 git flow feature start DBS-XX-nome-da-tarefa
-
 ```
+
+### Fazendo merge de outro branch remoto para o seu branch local atual:
+
+```bash
+# 1. Atualize a origem
+git fetch origin
+
+# 2. Vá para o seu branch (caso ainda não esteja)
+git checkout feature/DBS-XX-branch-que-vai-receber-o-merge
+
+# 3. Faça o merge do branch remoto
+git merge origin/feature/DBS-XX-branch-com-as-novidades
+```
+
