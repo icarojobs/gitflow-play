@@ -1,6 +1,9 @@
 # gitflow-play
 Link oficial: [https://danielkummer.github.io/git-flow-cheatsheet/](https://danielkummer.github.io/git-flow-cheatsheet/)
 
+
+Conventional commits: [https://www.conventionalcommits.org/en/v1.0.0](https://www.conventionalcommits.org/en/v1.0.0)
+
 ```bash
 sudo apt install git-flow
 
