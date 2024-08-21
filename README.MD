@@ -1,4 +1,5 @@
 # gitflow-play
+Link oficial: [https://danielkummer.github.io/git-flow-cheatsheet/](https://danielkummer.github.io/git-flow-cheatsheet/)
 
 ```bash
 sudo apt install git-flow
@@ -57,6 +58,9 @@ Bastaria pushar o branch develop (mas não é uma boa prática já que, geralmen
 ```bash
 # Para criação de novos recursos
 git flow feature start DBS-XX-nome-da-tarefa
+
+# Para correção de problemas (bugfix / hotfix)
+git flow bugfix start DBS-XX-nome-da-tarefa
 ```
 
 ### Fazendo merge de outro branch remoto para o seu branch local atual:
@@ -70,5 +74,24 @@ git checkout feature/DBS-XX-branch-que-vai-receber-o-merge
 
 # 3. Faça o merge do branch remoto
 git merge origin/feature/DBS-XX-branch-com-as-novidades
+```
+
+### Dicas adicionais
+```bash
+# Trazer uma feature publicada por outro desenvolvedor
+git flow feature pull origin DBS-XX-nome-do-branch
+
+# Para rastrear um branch na origem (origin)
+git flow feature track DBS-XX-nome-do-branch
+
+# Criar uma nova release
+git flow release start v1.x.x
+
+
+# Publicar release criada
+git flow release publish v1.x.x
+
+# Rastrear release na origem (origin)
+git flow release track v1.x.x
 ```
 
