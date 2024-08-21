@@ -59,8 +59,14 @@ Bastaria pushar o branch develop (mas não é uma boa prática já que, geralmen
 # Para criação de novos recursos
 git flow feature start DBS-XX-nome-da-tarefa
 
-# Para correção de problemas (bugfix / hotfix)
+# Para correção de problemas (bugfix)
 git flow bugfix start DBS-XX-nome-da-tarefa
+
+# Criando correção de problemas (hotfix)
+git flow hotfix start VERSION [BASENAME]
+
+# Finalizando correção de problemas (hotfix)
+git flow hotfix finish VERSION
 ```
 
 ### Fazendo merge de outro branch remoto para o seu branch local atual:
@@ -93,5 +99,9 @@ git flow release publish v1.x.x
 
 # Rastrear release na origem (origin)
 git flow release track v1.x.x
+
+# Finalizando a release
+git flow release finish v1.x.x
+git push origin --tags
 ```
 
