@@ -103,5 +103,9 @@ git flow release track v1.x.x
 # Finalizando a release
 git flow release finish v1.x.x
 git push origin --tags
+
+
+# Excluíndo um branch remoto
+git push origin -d feature/DBS-XX-nome-do-branch
 ```
 
